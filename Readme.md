@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Анастасия Волобуева](https://up.htmlacademy.ru/htmlcss/33/user/1975783).
-* Наставник: Сергей Остаповец (https://htmlacademy.ru/profile/seraphim).
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
