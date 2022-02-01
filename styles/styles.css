@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik/rubik-400.woff2 format") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #FFFFFF;
+    color: #000000;
+    ;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.page-header {
+    color: #000000;
+    background: #FFE17F;
+}
+
+.navigation-link {
+    color: #000000;
+    line-height: 18px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.basket {
+    line-height: 14px;
+    line-height: 16.59px;
+}
+
+.navigation-link-second {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.number-one {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 180px;
+    line-height: 30px;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: right;
+}
+
+.quadrocopter-advantages b {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+}
+
+.quadrocopter-desrciption {
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: normal;
+    color: #444444;
+}
+
+.quadrocopter-details {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+table .value {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+table .name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.category-link {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.category-image {
+    margin: auto;
+}
+
+.category-item {
+    height: 160px;
+    width: 160px;
+    background: #FFE17F;
+    text-align: center;
+    display: flex;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category {
+    width: 160px;
+    text-align: center;
+}
+
+.advantages {
+    background: #F0F0F0;
+}
+
+.advantages-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.advantages-desrciption {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.advantages-delivery {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+
+}
+
+.delivery-image {
+    background: #FFE17F;
+    text-align: center;
+    height: 100px;
+    width: 125px;
+}
+
+.delivery-desrciption {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background: #F0F0F0;
+}
+
+.about-title,
+.contacts-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.about-text,
+.about-companies,
+.contacts-information,
+.contacts-adress-text,
+.contacts-schedule-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.companies-list {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+
+}
+
+.newsletter {
+    background: #F0F0F0;
+}
+
+.page-footer-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.page-footer {
+    background: #444444;
+}
+
+.footer-contacts-address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.footer-contacts-link {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-phone {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
