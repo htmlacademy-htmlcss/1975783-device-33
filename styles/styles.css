@@ -37,7 +37,6 @@ body {
     line-height: 20px;
     background-color: #FFFFFF;
     color: #000000;
-    ;
 }
 
 .visually-hidden {
@@ -278,6 +277,20 @@ table .name {
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button-about,
+.button-feedback {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .footer-phone {
@@ -285,6 +298,95 @@ table .name {
     font-weight: normal;
     font-size: 16px;
     line-height: 20px;
-    text-decoration-line: underline;
     color: #FFFFFF;
+}
+
+.control-input,
+.control-input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.button-filter {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.breadcrumbs-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+}
+
+.catalog-products,
+.sorting {
+    background: #F0F0F0;
+}
+
+.product-card-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    color: #000000;
+}
+
+.product-card-link,
+.pagination-show-more,
+.pagination-link {
+    text-decoration: none;
+}
+
+.show-more {
+    border: #F0F0F0 solid;
+}
+
+.pagination-show-more {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
+    display: block;
+}
+
+.pagination-sector {
+    background: #EBEBEB;
+}
+
+.pagination-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+}
+
+.pagination-prev,
+.pagination-next {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #000000;
 }
