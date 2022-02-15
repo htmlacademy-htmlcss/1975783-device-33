@@ -47,7 +47,6 @@ body {
 }
 
 .navigation {
-    /* display: flex; */
     margin: 0 auto;
     color: #000000;
     background: #FFE17F;
@@ -105,12 +104,12 @@ body {
 }
 
 .visually-hidden {
-    display: none;
+    visibility: hidden;
 }
 
 .list {
     list-style-type: none;
-} 
+}
 
 .basket {
     line-height: 14px;
@@ -141,7 +140,7 @@ body {
 }
 
 .page-container {
-    width: 1160px;
+    width: 1440px;
     margin: 0 auto;
 }
 
@@ -334,11 +333,11 @@ body {
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
-    color:#FFE17F;
+    color: #FFE17F;
 }
 
 .company-item {
-    color:#000000;
+    color: #000000;
 }
 
 .newsletter {
@@ -353,7 +352,7 @@ body {
 }
 
 .newsletter-text {
-    width: 560px; 
+    width: 560px;
     margin-right: 133px;
 }
 
@@ -370,7 +369,7 @@ body {
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
-    width: 600px; 
+    width: 600px;
     margin-left: 147px;
 }
 
@@ -420,7 +419,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 0 140px;
-    width: 1160px;  
+    width: 1160px;
 }
 
 .footer-phone {
@@ -447,6 +446,13 @@ body {
     text-transform: uppercase;
 }
 
+.breadcrumbs {
+    display: flex;
+    width: 432px;
+    justify-content: space-between;
+    padding-left: 200px;
+}
+
 .breadcrumbs-link {
     font-weight: normal;
     font-size: 16px;
@@ -454,9 +460,60 @@ body {
     text-decoration: none;
 }
 
-.catalog-products,
-.sorting {
+.inner-header-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    padding-left: 200px;
+}
+
+.catalog-container {
+    display: flex;
+    padding: 0 200px;
+    width: 1440px;
     background: #F0F0F0;
+}
+
+.sorting {
+    width: 840px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-around;
+    width: 760px;
+    margin: 0 auto;
+    background: #F0F0F0;
+}
+
+.pagination-numbers {
+    display: flex;
+    justify-content: space-around;
+    width: 490px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    width: 840px;
+    margin: 0 auto;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.product-list-container {
+    background: #FFFFFF;
+}
+
+.catalog-filter {
+    width: 460px;
 }
 
 .product-card-title {
@@ -475,6 +532,8 @@ body {
 
 .show-more {
     border: #F0F0F0 solid;
+    width: 760px;
+    margin: 0 auto;
 }
 
 .pagination-show-more {
