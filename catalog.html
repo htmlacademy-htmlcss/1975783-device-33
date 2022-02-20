@@ -9,12 +9,11 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+    <a class="navigation-logo" href="#">
+      <img class="logo" width="145" height="36" alt="Логотип DEVICE" src="images/header-logo-black.svg"></a>
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" width="145" height="36" alt="Логотип DEVICE"
-          src="images/header-logo-black.svg"></a>
       <div class="navigation-container-first">
-        <ul class="navigation-list navigation-list-catalog">
+        <ul class="navigation-list navigation-list-first">
           <li class="list navigation-item-first">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label for="search-form">
@@ -76,11 +75,10 @@
           </li>
         </ul>
       </div>
-      <div class="number-one">01</div>
-    </nav>
+      </nav>
   </header>
   <main class="main-container main-inner">
-    <div class="page-container">
+    <div class="container">
       <h2 class="inner-header-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li class="list breadcrumbs-item">
@@ -106,6 +104,9 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость
               </legend>
+               <div class="slidecontainer">
+                <input type="range" min="0" max="10000" value="5000" class="slider" id="myRange">
+              </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет
@@ -167,10 +168,10 @@
         <div class="sorting-products">
           <section class="sorting">
             <h3 class="sorting-title">Сортировка:</h3>
-            <div class="sorting-container">
-              <select class="select-control" aria-label="Сортировка">
+             <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Популярное</option>
               </select>
+              <div class="sorting-cards">
               <a href="#" class="show-list">
                 <img class="list-turn-on" src="images/sort-item-list.svg" Width="11" height="10" alt="Показать список">
                 <span class="visually-hidden">Показать список</span>
@@ -180,6 +181,7 @@
                   alt="Показать карточки">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
+            </div>
           </section>
           <div class="product-list-container">
             <section class="products">

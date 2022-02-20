@@ -2,16 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Девайс
-  </title>
+  <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+    <a class="navigation-logo" href="#">
+      <img class="logo" width="145" height="36" alt="Логотип DEVICE" src="images/header-logo-black.svg"></a>
     <nav class="navigation">
-      <a class="navigation-logo" href="#">
-        <img class="logo" width="145" height="36" alt="Логотип DEVICE" src="images/header-logo-black.svg"></a>
       <div class="navigation-container-first">
         <ul class="navigation-list navigation-list-first">
           <li class="list navigation-item-first">
@@ -27,20 +26,20 @@
             </form>
           </li>
           <li class="list navigation-item-first">
-            <img class="mavigation-user-icon" alt="иконка пользователя" width="13" height="12"
+            <img class="navigation-link mavigation-user-icon" alt="иконка пользователя" width="13" height="12"
               src="images/header-user.svg">
             <a class="navigation-link" href="#">Войти</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-list-user">
           <li class="list navigation-item-user">
-            <img class="mavigation-compare-icon" alt="иконка сравнить" width="10" height="12"
+            <img class="navigation-link mavigation-compare-icon" alt="иконка сравнить" width="10" height="12"
               src="images/header-compare.svg">
-            <a class="navigation-link" href="#"><span>Сравнить</span></a>
+            <a class="navigation-link" href="#">Сравнить</a>
           </li>
           <li class="list navigation-item-user">
             <span class="basket">2</span>
-            <img class="mavigation-basket" alt="иконка корзина" width="16" height="14" src="images/header-basket.svg">
+            <img class="navigation-link navigation-basket" alt="иконка корзина" width="16" height="14" src="images/header-basket.svg">
             <a class="navigation-link" href="#">
               <span class="basket-list">Корзина</span>
             </a>
@@ -77,7 +76,7 @@
   </header>
   <main class="main-container main-index">
     <h2 class="main-title visually-hidden">Основная информация</h2>
-    <div class="page-container">
+    <div class="container">
       <section class="gallery">
         <h3 class="gallery-title visually-hidden">Фотогалерея</h3>
         <ol class="slider-pagination">
@@ -98,12 +97,12 @@
                 </button>
               </div>
               <div class="quadrocopter-advantages">
-                <b>Порхает как бабочка, жалит как пчела!</b>
+                <b class="quadrocopter-tagline">Порхает как бабочка, жалит как пчела!</b>
                 <p class="quadrocopter-desrciption">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
                 <a class="quadrocopter-details" href="#">Подробнее</a>
-                <table>
-                  <tr class="table-value">
+                <table class="quadrocopter-parameters">
+                 <tr class="table-value">
                     <td>800м</td>
                     <td>50м</td>
                   </tr>
@@ -130,8 +129,7 @@
       </section>
       <section class="catalog">
         <h2 class="catalog-title visually-hidden">Категории товаров</h2>
-        <div class="category-container">
-        <ul class="category-list">
+          <ul class="category-list">
           <li class="list category">
             <div class="category-item">
               <img class="category-image" src="images/main-virtual-reality.svg" height="55" width="97"
@@ -175,8 +173,7 @@
             <a class="category-link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
-      </div>
-      </section>
+        </section>
       <section class="advantages">
         <h2 class="advantages-common visually-hidden">Преимущества</h2>
         <div class="delivery">
@@ -215,11 +212,12 @@
       <div class="delivery-image">
          <img class="delivery-icon" src="images/main-truck.svg" height="31" width="47" alt="Доставка">
       </div>
-      <div class="delivery-desrciption">Доставим редкий товар под заказ
+      <div class="delivery-desrciption">
+        <p class="delivery-desrciption-info">Доставим редкий товар под заказ</p>
       </div>
         </section>
         <div class="about-company">
-      <section class="about">
+        <section class="about">
         <img class="horizontal-line" src="images/horizontal-line.svg" height="7" width="84" alt="Декоративный элемент">
         <h2 class="about-title">О нас</h2>
         <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -227,9 +225,9 @@
           компаниями:
         </p>
         <ul class="companies-list">
-          <li><span class="company-item">Меловые линии</span></li>
-          <li><span class="company-item">СДИК</li>
-          <li><span class="company-item">ТоксБерри</li>
+          <li class="transport-company"><span class="company-item">Меловые линии</span></li>
+          <li class="transport-company"><span class="company-item">СДИК</li>
+          <li class="transport-company"><span class="company-item">ТоксБерри</li>
         </ul>
         <a class="button button-about" href="#">Подробнее о нас</a>
       </section>
@@ -307,18 +305,18 @@
       <ul class="footer-social-list">
         <li class="list footer-social-item">
           <a class="facebook-link" href="https://www.facebook.com/htmlacademy">
-            <img class="facebook-icon" height="18" width="9" src="images/footer-facebook.svg" alt="ссылка на фейсбук">
+            <img class="facebook-icon" height="40" width="40" src="images/footer-facebook.svg" alt="ссылка на фейсбук">
           </a>
         </li>
         <li class="list footer-social-item">
           <a class="instagram-link" href="https://www.instagram.com/htmlacademy">
-            <img class="instagram-icon" height="16" width="16" src="images/footer-instagram.svg"
+            <img class="instagram-icon" height="40" width="40" src="images/footer-instagram.svg"
               alt="ссылка на инстаграмм">
           </a>
         </li>
         <li class="list footer-social-item">
           <a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
-            <img class="twitter-icon" height="14" width="15" src="images/footer-twiter.svg" alt="ссылка на твиттер">
+            <img class="twitter-icon" height="40" width="40" src="images/footer-twiter.svg" alt="ссылка на твиттер">
           </a>
         </li>
       </ul>
