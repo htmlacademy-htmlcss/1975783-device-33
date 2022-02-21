@@ -68,7 +68,7 @@ body {
 
 .navigation-container-second {
     margin-bottom: 30px;
-} 
+}
 
 .navigation-list-user,
 .navigation-list-first,
@@ -243,7 +243,7 @@ body {
 }
 
 .table-value td {
-   padding-right: 58px;
+    padding-right: 58px;
 }
 
 .table-name {
@@ -298,7 +298,7 @@ body {
     margin-bottom: 100px;
 }
 
-.advantages {    
+.advantages {
     width: 1440px;
     background: #F0F0F0;
     margin: 0;
@@ -360,7 +360,7 @@ body {
 
 .advantages-list {
     margin-top: -35px;
-} 
+}
 
 .advantages-line {
     margin-top: -102px;
@@ -472,7 +472,7 @@ body {
 
 .contacts-schedule {
     margin-bottom: 40px;
-} 
+}
 
 .transport-company {
     margin-bottom: 20px;
@@ -573,7 +573,6 @@ body {
     margin: 0 auto;
 }
 
-
 .footer-contacts-link {
     font-family: "Raleway", "Arial", sans-serif;
     font-weight: 800;
@@ -632,6 +631,7 @@ body {
     width: 432px;
     justify-content: space-between;
     padding-left: 200px;
+    margin-bottom: 35px;
 }
 
 .breadcrumbs-link {
@@ -659,7 +659,7 @@ body {
 
 .catalog-container {
     display: flex;
-    padding: 0 200px;
+    padding: 0px;
     width: 1440px;
     background: #F0F0F0;
 }
@@ -684,10 +684,9 @@ body {
     margin-top: 20px;
 }
 
-
 .pagination {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 760px;
     margin: 0 auto;
     background: #F0F0F0;
@@ -708,13 +707,12 @@ body {
     display: flex;
     justify-content: space-around;
     width: 840px;
-    margin: 0 auto;
-    padding-right: 40px;
-    padding-left: 40px;
+    margin: 0px;
 }
 
 .product-list-container {
     background: #FFFFFF;
+    padding: 50px 0;
 }
 
 .catalog-filter {
@@ -738,7 +736,11 @@ body {
 .show-more {
     border: #F0F0F0 solid;
     width: 760px;
-    margin: 0 auto;
+    margin: 40px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pagination-show-more {
@@ -764,6 +766,10 @@ body {
     color: #444444;
 }
 
+.pagination-numbers {
+    justify-content: space-around;
+}
+
 .pagination-prev,
 .pagination-next {
     font-family: "Raleway", "Arial", sans-serif;
@@ -772,7 +778,16 @@ body {
     line-height: 21px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #000000;
+}
+
+.pagination-prev {
+    width: 128px;
+}
+
+.pagination-next {
+    width: 140px;
 }
