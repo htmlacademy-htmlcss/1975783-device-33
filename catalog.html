@@ -9,12 +9,11 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+    <a class="navigation-logo" href="#">
+      <img class="logo" width="145" height="36" alt="Логотип DEVICE" src="images/header-logo-black.svg"></a>
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" width="145" height="36" alt="Логотип DEVICE"
-          src="images/header-logo-black.svg"></a>
       <div class="navigation-container-first">
-        <ul class="navigation-list navigation-list-catalog">
+        <ul class="navigation-list navigation-list-first">
           <li class="list navigation-item-first">
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <label for="search-form">
@@ -76,11 +75,10 @@
           </li>
         </ul>
       </div>
-      <div class="number-one">01</div>
     </nav>
   </header>
   <main class="main-container main-inner">
-    <div class="page-container">
+    <div class="container">
       <h2 class="inner-header-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li class="list breadcrumbs-item">
@@ -106,6 +104,9 @@
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость
               </legend>
+              <div class="slidecontainer">
+                <input type="range" min="0" max="10000" value="5000" class="slider" id="myRange">
+              </div>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет
@@ -167,10 +168,10 @@
         <div class="sorting-products">
           <section class="sorting">
             <h3 class="sorting-title">Сортировка:</h3>
-            <div class="sorting-container">
-              <select class="select-control" aria-label="Сортировка">
-                <option value="popular">Популярное</option>
-              </select>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="popular">Популярное</option>
+            </select>
+            <div class="sorting-cards">
               <a href="#" class="show-list">
                 <img class="list-turn-on" src="images/sort-item-list.svg" Width="11" height="10" alt="Показать список">
                 <span class="visually-hidden">Показать список</span>
@@ -180,6 +181,7 @@
                   alt="Показать карточки">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
+            </div>
           </section>
           <div class="product-list-container">
             <section class="products">
@@ -230,38 +232,38 @@
               </ul>
             </section>
             <section class="show-more-section">
-            <div class="show-more">
-              <a class="button pagination-show-more" href="#">Загрузить ещё</a>
-            </div>
-            <div class="pagination">
-               <ul class="pagination-list">
-                <li class="list pagination-item">
-                  <a class="pagination-link pagination-prev" href="#">Назад</a>
-                </li>
-              </ul>
-              <ul class="pagination-numbers">
-                <li class="list pagination-item">
-                  <a class="pagination-link" href="#">1</a>
-                </li>
-                <li class="list pagination-item">
-                  <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="list pagination-item">
-                  <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="list pagination-item">
-                  <a class="pagination-link" href="#">...</a>
-                </li>
-                <li class="list pagination-item">
-                  <a class="pagination-link" href="#">15</a>
-                </li>
+              <div class="show-more">
+                <a class="button pagination-show-more" href="#">Загрузить ещё</a>
+              </div>
+              <div class="pagination">
+                <ul class="pagination-list">
+                  <li class="list pagination-prev">
+                    <a class="pagination-link" href="#">Назад</a>
+                  </li>
+                </ul>
+                <ul class="pagination-numbers">
+                  <li class="list pagination-item">
+                    <a class="pagination-link" href="#">1</a>
+                  </li>
+                  <li class="list pagination-item">
+                    <a class="pagination-link" href="#">2</a>
+                  </li>
+                  <li class="list pagination-item">
+                    <a class="pagination-link" href="#">3</a>
+                  </li>
+                  <li class="list pagination-item">
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="list pagination-item">
+                    <a class="pagination-link" href="#">15</a>
+                  </li>
                 </ul>
                 <ul class="pagination">
-                <li class="list pagination-item">
-                  <a class="pagination-link pagination-next" href="#">Вперед</a>
-                </li>
-              </ul>
-            </div>
+                  <li class="list pagination-next">
+                    <a class="pagination-link" href="#">Вперед</a>
+                  </li>
+                </ul>
+              </div>
             </section>
           </div>
         </div>
@@ -274,52 +276,53 @@
       <h2 class="visually-hidden">Контакты</h2>
       <img class="footer-contacts-logo" src="images/footer-logo-yellow.svg" height="36" width="145"
         alt="Логотип интернет-магазина Девайс">
-        <div class="footer-container-first">
-      <address class="footer-contacts-address">
-        <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-      </address>
-      <ul class="footer-contacts-list">
-        <li class="list footer-contacts-item">
-          <a class="footer-contacts-link" href="#">Доставка</a>
-        </li>
-        <li class="list footer-contacts-item">
-          <a class="footer-contacts-link" href="#">Гарантия</a>
-        </li>
-        <li class="list footer-contacts-item">
-          <a class="footer-contacts-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <a class="footer-phone" href="tel:88128121212">8 (812) 812-12-12</a>
-    </div>
+      <div class="footer-container-first">
+        <address class="footer-contacts-address">
+          <p class="footer-contacts-address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        </address>
+        <ul class="footer-contacts-list">
+          <li class="list footer-contacts-item">
+            <a class="footer-contacts-link" href="#">Доставка</a>
+          </li>
+          <li class="list footer-contacts-item">
+            <a class="footer-contacts-link" href="#">Гарантия</a>
+          </li>
+          <li class="list footer-contacts-item">
+            <a class="footer-contacts-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <a class="footer-phone" href="tel:88128121212">8 (812) 812-12-12</a>
+      </div>
     </section>
     <section class="footer-social">
       <h2 class="page-footer-title visually-hidden">Социальные сети</h2>
       <div class="footer-container-second">
-      <div class="line">
-        <img class="image-line" src="images/footer-yellow-line.svg" height="7" width="80" alt="Желтая линия">
+        <div class="line">
+          <img class="image-line" src="images/footer-yellow-line.svg" height="7" width="80" alt="Желтая линия">
+        </div>
+        <ul class="footer-social-list">
+          <li class="list footer-social-item">
+            <a class="facebook-link" href="https://www.facebook.com/htmlacademy">
+              <img class="facebook-icon" height="40" width="40" src="images/footer-facebook.svg"
+                alt="ссылка на фейсбук">
+            </a>
+          </li>
+          <li class="list footer-social-item">
+            <a class="instagram-link" href="https://www.instagram.com/htmlacademy">
+              <img class="instagram-icon" height="40" width="40" src="images/footer-instagram.svg"
+                alt="ссылка на инстаграмм">
+            </a>
+          </li>
+          <li class="list footer-social-item">
+            <a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
+              <img class="twitter-icon" height="40" width="40" src="images/footer-twiter.svg" alt="ссылка на твиттер">
+            </a>
+          </li>
+        </ul>
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" height="33" width="115"
+            src="images/html-academy-logo.svg" alt="логотип htmlacademy">
+        </a>
       </div>
-      <ul class="footer-social-list">
-        <li class="list footer-social-item">
-          <a class="facebook-link" href="https://www.facebook.com/htmlacademy">
-            <img class="facebook-icon" height="18" width="9" src="images/footer-facebook.svg" alt="ссылка на фейсбук">
-          </a>
-        </li>
-        <li class="list footer-social-item">
-          <a class="instagram-link" href="https://www.instagram.com/htmlacademy">
-            <img class="instagram-icon" height="16" width="16" src="images/footer-instagram.svg"
-              alt="ссылка на инстаграмм">
-          </a>
-        </li>
-        <li class="list footer-social-item">
-          <a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
-            <img class="twitter-icon" height="14" width="15" src="images/footer-twiter.svg" alt="ссылка на твиттер">
-          </a>
-        </li>
-      </ul>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="htmlacademy-logo" height="33" width="115"
-          src="images/html-academy-logo.svg" alt="логотип htmlacademy">
-      </a>
-    </div>
     </section>
   </footer>
 </body>
