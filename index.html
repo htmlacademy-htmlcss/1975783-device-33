@@ -8,72 +8,56 @@
 <body>
   <header class="page-header">
     <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
+    <div class="header-wrapper">
+      <div class="header-logo-wrapper">
+        <a class="header-logo" href="#">
+          <img class="logo" width="145" height="36" alt="Логотип DEVICE" src="images/header-logo-black.svg">
+        </a>
+      </div>
+      <div class="user-menu-wrapper">
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+          <label for="search-form">
+            <img class="search-icon" alt="значок поиска" width="16" height="16" src="images/header-search.svg">
+          </label>
+          <input class="search-field" placeholder="Текст поиска" type="text" name="search" id="search-form"
+            required>
+          <button class="button search-button" type="submit">Найти</button>
+        </form>
+        <div class="user-menu">
+          <ul class="list-user-menu">
+        <li class="list navigation-item-first">
+            <a class="navigation-link user-login-icon" href="#">Войти</a>
+        </li>
+      </ul>
+      <ul class="list-user-menu-registration">
+          <li class="list navigation-item-user">
+          <a class="navigation-link user-compare-icon" href="#">Сравнить</a>
+        </li>
+        <li class="list navigation-item-user">
+           <a class="navigation-link" href="#">
+            <span class="basket-list user-basket-icon">Корзина</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
     <nav class="navigation">
-      <a class="navigation-logo" href="#">
-        <img class="logo" width="145" height="36" alt="Логотип DEVICE" src="images/header-logo-black.svg"></a>
-      <div class="navigation-container-first">
-        <ul class="navigation-list navigation-list-first">
-          <li class="list navigation-item-first">
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-              <label for="search-form">
-                <img class="search-icon" alt="значок поиска" width="16" height="16" src="images/header-search.svg">
-              </label>
-              <input class="search-field" placeholder="Текст поиска" type="text" name="search" id="search-form"
-                required>
-              <button class="button search-button" type="submit">
-                Найти
-              </button>
-            </form>
+        <ul class="navigation-menu">
+          <li class="list navigation-menu-item">
+            <a class="navigation-link-catalog navigation-link-catalog-main" href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="list navigation-item-first">
-            <img class="navigation-link mavigation-user-icon" alt="иконка пользователя" width="13" height="12"
-              src="images/header-user.svg">
-            <a class="navigation-link" href="#">Войти</a>
+          <li class="list navigation-menu-item">
+            <a class="navigation-link-catalog" href="#">Доставка</a>
+          </li>
+          <li class="list navigation-menu-item">
+            <a class="navigation-link-catalog" href="#">Гарантия</a>
+          </li>
+          <li class="list navigation-menu-item navigation-menu-item-contacts">
+            <a class="navigation-link-catalog" href="#">Контакты</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-list-user">
-          <li class="list navigation-item-user">
-            <img class="navigation-link mavigation-compare-icon" alt="иконка сравнить" width="10" height="12"
-              src="images/header-compare.svg">
-            <a class="navigation-link" href="#">Сравнить</a>
-          </li>
-          <li class="list navigation-item-user">
-            <span class="basket">2</span>
-            <img class="navigation-link navigation-basket" alt="иконка корзина" width="16" height="14"
-              src="images/header-basket.svg">
-            <a class="navigation-link" href="#">
-              <span class="basket-list">Корзина</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="navigation-container-second">
-        <ul class="navigation-list navigation-list-catalog">
-          <li class="list navigation-item-second">
-            <a class="navigation-link-second" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="list navigation-button">
-            <button class="button-catalog" type="submit">
-              <span class="button-plus">
-                <img class="mavigation-plus" alt="иконка плюс" src="images/header-plus.svg">
-              </span>
-            </button>
-          </li>
-        </ul>
-        <ul class="navigation-list navigation-list-information">
-          <li class="list navigation-item-second">
-            <a class="navigation-link-second" href="#">Доставка</a>
-          </li>
-          <li class="list navigation-item-second">
-            <a class="navigation-link-second" href="#">Гарантия</a>
-          </li>
-          <li class="list navigation-item-second">
-            <a class="navigation-link-second" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="number-one">01</div>
-    </nav>
+     </nav>
+    </div>
   </header>
   <main class="main-container main-index">
     <h2 class="main-title visually-hidden">Основная информация</h2>
@@ -98,6 +82,7 @@
                 </button>
               </div>
               <div class="quadrocopter-advantages">
+                <div class="number-one">01</div>
                 <b class="quadrocopter-tagline">Порхает как бабочка, жалит как пчела!</b>
                 <p class="quadrocopter-desrciption">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
