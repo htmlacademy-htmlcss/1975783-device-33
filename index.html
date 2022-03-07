@@ -16,9 +16,9 @@
       </div>
       <div class="user-menu-wrapper">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-          <label for="search-form">
+          <!-- <label for="search-form">
             <img class="search-icon" alt="значок поиска" width="16" height="16" src="images/header-search.svg">
-          </label>
+          </label> -->
           <input class="search-field" placeholder="Текст поиска" type="text" name="search" id="search-form" required>
           <button class="button search-button" type="submit">Найти</button>
         </form>
@@ -33,9 +33,7 @@
               <a class="navigation-link user-compare-icon" href="#">Сравнить</a>
             </li>
             <li class="list navigation-item-user">
-              <a class="navigation-link" href="#">
-                <span class="basket-list user-basket-icon">Корзина</span>
-              </a>
+              <a class="navigation-link user-basket-icon" href="#">Корзина</a>
             </li>
           </ul>
         </div>
@@ -85,7 +83,7 @@
                 <b class="quadrocopter-tagline">Порхает как бабочка, жалит как пчела!</b>
                 <p class="quadrocopter-desrciption">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную камеру.</p>
-                <a class="quadrocopter-details" href="#">Подробнее</a>
+                <a class="button-details" href="#">Подробнее</a>
                 <table class="quadrocopter-parameters">
                   <tr class="table-value">
                     <td>800м</td>
@@ -161,37 +159,30 @@
       </section>
       <section class="advantages">
         <h2 class="advantages-common visually-hidden">Преимущества</h2>
-        <div class="delivery">
-          <ul class="advantages-list">
-            <li class="list advantages-item">
-              <button class="advantages-button advantages-button-current" type="button">
+        <div class="advantages-wrapper">
+        <div class="services-wrapper">
+            <button class="advantages-button-current" type="button">
                 <span class="advantages-title advantages-title-delivery">Доставка</span>
               </button>
-            </li>
-            <li class="list advantages-item">
-              <button class="advantages-button" type="button">
+            <button class="advantages-button" type="button">
                 <span class="advantages-title">Гарантия</span>
-              </button>
-            </li>
-            <li class="list advantages-item">
+              </button>        
               <button class="advantages-button" type="button">
                 <span class="advantages-title">Кредит</span>
               </button>
-            </li>
-          </ul>
-          <img class="advantages-line" src="images/vertical-line.svg" height="319" width="7"
-            alt="Декоративный элемент-линия">
-          <div class="delivery-info">
-            <h3 class="advantages-delivery">Доставка</h3>
-            <p class="advantages-desrciption">
-              Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно! Ведь
+        </div> 
+        <ul class="list service-list">
+          <li class="service-list-item">
+         <div class="services-info">
+            <h3 class="services-title">Доставка</h3>
+            <p class="service-desrciption">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </div>
-          <img class="advantages-image" src="images/main-running-man.svg" height="164" width="136"
-            alt="Бегущий человечек">
-        </div>
+        </li>
+        </ul>
+      </div>
       </section>
       <section class="delivery-information">
         <h2 class="delivery-title visually-hidden">Информация о доставке</h2>
