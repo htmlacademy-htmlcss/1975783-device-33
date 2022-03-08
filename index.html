@@ -60,55 +60,51 @@
     <h2 class="main-title visually-hidden">Основная информация</h2>
     <div class="container">
       <section class="gallery">
-        <h3 class="gallery-title visually-hidden">Фотогалерея</h3>
+        <h2 class="gallery-title visually-hidden">Лучшие товары</h2>
         <ol class="slider-pagination">
-          <li class="list slider-pagination-item">
+          <li class="list slider-pagination-item slider-pagination-item-visible">
+            <h3 class="quadrocopter visually-hidden">Квадрокоптер</h3>
             <div class="gallery-container">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">1 фото</span>
+              <button class="button-preview" type="button"><svg width="20" height="60" viewBox="0 0 20 60" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
+                </svg>
               </button>
-              <div class="gallery-slider">
-                <button class="slider-button slider-prev" type="button">
-                  <img class="preview" src="images/preview.svg" width="20" height="60" alt="Предыдущее фото">
-                  <span class="visually-hidden">Предыдущее фото</span>
-                </button>
-                <img class="slider-image" src="images/slider-1.png" width="500" height="500" alt="Примеры товаров">
-                <button class="slider-button clider-next" type="button">
-                  <img class="next" src="images/next.svg" width="20" height="60" alt="Следующее фото">
-                  <span class="visually-hidden">Следующее фото</span>
-                </button>
-              </div>
-              <div class="quadrocopter-advantages">
-                <div class="number-one">01</div>
-                <b class="quadrocopter-tagline">Порхает как бабочка, жалит как пчела!</b>
-                <p class="quadrocopter-desrciption">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-                  замаскированным под стандартную камеру.</p>
-                <a class="button-details" href="#">Подробнее</a>
-                <table class="quadrocopter-parameters">
-                  <tr class="table-value">
-                    <td>800м</td>
-                    <td>50м</td>
-                  </tr>
-                  <tr class="table-name">
-                    <td>Дальность полета</td>
-                    <td>Радиус поражения</td>
-                  </tr>
-                </table>
-              </div>
+              <img class="slider-image" src="images/slider-1.png" width="490" height="490" alt="Примеры товаров">
+              <button class="button-next" type="button"><svg width="20" height="60" viewBox="0 0 20 60" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
+                    fill="black" />
+                </svg>
+              </button>
+            </div>
+            <div class="gallery_content">
+              <p class="gallery-content-title">Порхает как бабочка, жалит как пчела!</p>
+              <p class="gallery-content-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                лазером,
+                замаскированным под стандартную камеру.</p>
+              <a class="button-detailes" href="#">Подробнее</a>
+              <table class="product-parameters">
+                <tr class="table-value">
+                  <td>800м</td>
+                  <td>50м</td>
+                </tr>
+                <tr class="table-name">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
             </div>
           </li>
-          <li class="list slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото
-              </span>
-            </button>
-          </li>
-          <li class="list slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
-          </li>
+          <li class="list slider-pagination-item"></li>
+          <li class="list slider-pagination-item"></li>
         </ol>
+        <div class="slider-indicator-buttons">
+          <button class="slider-indicator slider-indicator-one" type="button" aria-label="1"></button>
+          <button class="slider-indicator slider-indicator-two" type="button" aria-label="2"></button>
+          <button class="slider-indicator slider-indicator-three" type="button" aria-label="3"></button>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="catalog-title visually-hidden">Категории товаров</h2>
@@ -160,29 +156,29 @@
       <section class="advantages">
         <h2 class="advantages-common visually-hidden">Преимущества</h2>
         <div class="advantages-wrapper">
-        <div class="services-wrapper">
+          <div class="services-wrapper">
             <button class="advantages-button-current" type="button">
-                <span class="advantages-title advantages-title-delivery">Доставка</span>
-              </button>
+              <span class="advantages-title advantages-title-delivery">Доставка</span>
+            </button>
             <button class="advantages-button" type="button">
-                <span class="advantages-title">Гарантия</span>
-              </button>        
-              <button class="advantages-button" type="button">
-                <span class="advantages-title">Кредит</span>
-              </button>
-        </div> 
-        <ul class="list service-list">
-          <li class="service-list-item">
-         <div class="services-info">
-            <h3 class="services-title">Доставка</h3>
-            <p class="service-desrciption">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
-              мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
+              <span class="advantages-title">Гарантия</span>
+            </button>
+            <button class="advantages-button" type="button">
+              <span class="advantages-title">Кредит</span>
+            </button>
           </div>
-        </li>
-        </ul>
-      </div>
+          <ul class="list service-list">
+            <li class="service-list-item">
+              <div class="services-info">
+                <h3 class="services-title">Доставка</h3>
+                <p class="service-desrciption">
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="delivery-information">
         <h2 class="delivery-title visually-hidden">Информация о доставке</h2>
@@ -194,8 +190,8 @@
       </section>
       <div class="about-company">
         <section class="about">
-          <img class="horizontal-line" src="images/horizontal-line.svg" height="7" width="84"
-            alt="Декоративный элемент">
+          <!-- <img class="horizontal-line" src="images/horizontal-line.svg" height="7" width="84"
+            alt="Декоративный элемент"> -->
           <h2 class="about-title">О нас</h2>
           <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p class="about-companies">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
@@ -209,8 +205,8 @@
           <a class="button button-about" href="#">Подробнее о нас</a>
         </section>
         <section class="contacts">
-          <img class="horizontal-line" src="images/horizontal-line.svg" height="7" width="84"
-            alt="Декоративный элемент">
+          <!-- <img class="horizontal-line" src="images/horizontal-line.svg" height="7" width="84"
+            alt="Декоративный элемент"> -->
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-information">
             Вы можете забрать товар сами, заехав в наш офис.<br>
@@ -239,14 +235,11 @@
         <div class="send-letter">
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email"></label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+            <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
-          <span class="free-of-charge">
-            <img class="check-mark" height="14" width="14" src="images/main-check-mark.svg" alt="Бесплатно">
-            Это бесплатно
-          </span>
+          <span class="free-of-charge">Это бесплатно</span>
         </div>
       </section>
     </div>
