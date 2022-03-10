@@ -182,7 +182,7 @@ body {
 
 .user-menu-registration-list {
     display: grid;
-    grid-template-columns: repeat(2,max-content);
+    grid-template-columns: repeat(2, max-content);
     column-gap: 28px;
     align-items: center;
     margin: 0;
@@ -198,16 +198,16 @@ body {
 
 .navigation-link:hover {
     opacity: 0.6;
-  }
+}
 
 .navigation-link:active {
     opacity: 0.3;
-}  
+}
 
 .navigation-link:focus {
     border: 2px solid #AF4FFF;
 }
-  
+
 .navigation {
     margin: 0 auto;
     padding-top: 18px;
@@ -283,21 +283,21 @@ body {
     position: relative;
     width: 1160px;
     background-image: linear-gradient(180deg, #FFE17F 148px, #ffffff 114px);
-    margin:0 auto;
+    margin: 0 auto;
 }
-    
+
 .slider-pagination {
     margin-top: 0;
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
     padding: 0;
 }
-    
+
 .slider-pagination-item-visible {
     visibility: visible;
     transition: all 1.5s ease-in-out;
     opacity: 1;
 }
-    
+
 .slider-pagination-item {
     display: grid;
     grid-template-columns: 560px 560px;
@@ -307,7 +307,7 @@ body {
     grid-column-start: 1;
     grid-row-start: 1;
 }
-    
+
 .slider-image {
     display: flex;
     justify-content: center;
@@ -329,11 +329,26 @@ body {
     background-color: #ffffff
 }
 
+.button-preview:hover svg,
+.button-next:hover svg {
+    opacity: 0.6;
+}
+
+.button-preview:active svg,
+.button-next:active svg {
+    opacity: 0.3;
+}
+
+.button-preview:focus svg,
+.button-next:focus svg {
+    border: 2px solid #AF4FFF;
+}
+
 .gallery_content {
     position: relative;
     padding-top: 58px;
 }
-   
+
 .gallery-content-description {
     font-size: 18px;
     line-height: 30px;
@@ -369,20 +384,20 @@ body {
     text-align: center;
     background-color: transparent;
 }
-    
+
 .button-detailes::before {
     content: "";
     position: absolute;
     z-index: -1;
     left: 20px;
-    top: 73%; 
+    top: 73%;
     transform: translateY(-50%);
     width: 220px;
     height: 8px;
     background-color: #FFE17F;
     transition: height .3s ease-in-out;
 }
-    
+
 /* .slider-pagination-item::after {
     content: "0" counter(slide);
     counter-increment: slide;
@@ -394,24 +409,24 @@ body {
     font-size: 180px;
     color: #FFFFFF;
 } */
-    
+
 .table-value {
     font-weight: normal;
     font-size: 36px;
     line-height: 30px;
 }
-    
+
 .table-value td {
     padding-right: 58px;
 }
-    
+
 .table-name {
     font-weight: normal;
     font-size: 16px;
     line-height: 30px;
     color: #444444;
 }
-    
+
 .table-name td {
     padding-right: 20px;
 }
@@ -460,7 +475,7 @@ body {
 
 .category-list {
     display: grid;
-    grid-template-columns: repeat(6,160px);
+    grid-template-columns: repeat(6, 160px);
     gap: 40px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -500,7 +515,7 @@ body {
 /* -Services/advantages */
 
 .advantages {
-    background-image: linear-gradient(180deg,#ffffff 115px,#F0F0F0 115px);
+    background-image: linear-gradient(180deg, #ffffff 115px, #F0F0F0 115px);
 }
 
 .advantages-wrapper {
@@ -597,7 +612,7 @@ body {
     line-height: 50px;
     margin-top: 40px;
     margin-bottom: 40px
-} 
+}
 
 .service-list-item {
     position: relative;
@@ -781,7 +796,8 @@ body {
 }
 
 .newsletter-button {
-    font-family: "Raleway", "Arial", sans-serif;;
+    font-family: "Raleway", "Arial", sans-serif;
+    ;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
@@ -790,7 +806,7 @@ body {
     text-transform: uppercase;
     padding: 18px 39px;
     height: 57px;
-    border:3px solid #C4C4C4;
+    border: 3px solid #C4C4C4;
 
 }
 
@@ -832,7 +848,7 @@ body {
     padding: 26px;
     background-repeat: no-repeat;
     background-position: 0 50%;
-} 
+}
 
 /* Footer */
 
@@ -1023,9 +1039,9 @@ body {
 }
 
 .breadcrumbs-item:not(:last-child) {
-  background-image: url(../images/breadcrumbs.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
+    background-image: url(../images/breadcrumbs.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
 }
 
 
@@ -1058,10 +1074,10 @@ body {
 .catalog-filter-group,
 .catalog-filter-group-color,
 .catalog-filter-group-bluetooth {
-   margin: 0;
-   padding: 0;
-   border: 0; 
-} 
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 .catalog-filter-group::before {
     content: "";
@@ -1072,7 +1088,7 @@ body {
     top: -16px;
     height: 2px;
     background-color: #000000;
-} 
+}
 
 .slider {
     appearance: none;
@@ -1204,7 +1220,7 @@ body {
     height: 0;
     border-left: 5.5px solid transparent;
     border-right: 5.5px solid transparent;
-    border-bottom: 10px solid rgba(0,0,0,.2);
+    border-bottom: 10px solid rgba(0, 0, 0, .2);
 }
 
 .sorting-direction-link-transform {
