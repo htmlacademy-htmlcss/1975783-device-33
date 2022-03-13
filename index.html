@@ -58,32 +58,28 @@
   </header>
   <main class="main-container main-index">
     <h2 class="main-title visually-hidden">Основная информация</h2>
-    <div class="container">
       <section class="gallery">
-        <h2 class="gallery-title visually-hidden">Лучшие товары</h2>
+        <h3 class="gallery-title visually-hidden">Фотогалерея</h3>
+        <div class="gallery-wrapper">
         <ol class="slider-pagination">
           <li class="list slider-pagination-item slider-pagination-item-visible">
             <h3 class="quadrocopter visually-hidden">Квадрокоптер</h3>
-            <div class="gallery-container">
-              <button class="button-preview" type="button">
-                <svg class="button-preview-icon" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black" />
-                </svg>
+            <div class="gallery-container"> 
+              <img class="slider-image" src="images/slider-1.png" width="520" height="520" alt="Примеры товаров">
+              <div class="slider-controls">
+              <button class="button-slider button-slider-prev" type="button">
+              <span class="visually-hidden">Предыдущее фото</span>
+            </button>
+              <button class="button-slider button-slider-next" type="button">
+            <span class="visually-hidden">Следующее фото</span>
               </button>
-              <img class="slider-image" src="images/slider-1.png" width="490" height="490" alt="Примеры товаров">
-              <button class="button-next" type="button">
-                <svg class="button-next-icon" aria-hidden="true" focusable="false" width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z"
-                    fill="black"/>
-                </svg>
-              </button>
+            </div>
             </div>
             <div class="gallery_content">
               <p class="gallery-content-title">Порхает как бабочка, жалит как пчела!</p>
               <p class="gallery-content-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                лазером,
-                замаскированным под стандартную камеру.</p>
-              <a class="button-detailes" href="#">Подробнее</a>
+                лазером, замаскированным под стандартную камеру.</p>
+              <a class="button button-detailes" href="#">Подробнее</a>
               <table class="product-parameters">
                 <tr class="table-value">
                   <td>800м</td>
@@ -99,11 +95,12 @@
           <li class="list slider-pagination-item"></li>
           <li class="list slider-pagination-item"></li>
         </ol>
-        <!-- <div class="slider-indicator-buttons">
-          <button class="slider-indicator slider-indicator-one" type="button" aria-label="1"></button>
-          <button class="slider-indicator slider-indicator-two" type="button" aria-label="2"></button>
-          <button class="slider-indicator slider-indicator-three" type="button" aria-label="3"></button>
-        </div> -->
+        <div class="slider-indicator-buttons">
+          <button class="button-indicator slider-indicator-one" type="button" aria-label="1"></button>
+          <button class="button-indicator slider-indicator-two" type="button" aria-label="2"></button>
+          <button class="button-indicator slider-indicator-three" type="button" aria-label="3"></button>
+        </div>
+      </div>
         <div class="catalog">
         <h2 class="catalog-title visually-hidden">Категории товаров</h2>
         <ul class="category-list">
@@ -205,7 +202,9 @@
         <div class="delivery-desrciption">Доставим редкий товар под заказ
         </div>
       </section>
-      <div class="about-company">
+      <section class="about-company">
+        <h2 class="about-compahy-title visually-hidden">Информация о магазине Девайс</h2>
+        <div class="about-company-wrapper">
         <section class="about">
           <h2 class="about-title">О нас</h2>
           <p class="about-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -238,14 +237,17 @@
           <a class="button button-feedback" href="#">Напишите нам</a>
         </section>
       </div>
+      </section>
       <section class="newsletter">
-        <div class="subscription">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <h2 class="newsletter-title visually-hidden">Подписка на новости</h2>
+        <div class="newsletter-wrapper">
+        <section class="subscription">
+          <h3 class="newsletter-title">Подпишитесь на рассылку</h3>
           <p class="newsletter-text">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
           </p>
-        </div>
-        <div class="send-letter">
+        </section>
+        <section class="send-letter">
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email"></label>
             <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
@@ -253,9 +255,9 @@
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
           <span class="free-of-charge">Это бесплатно</span>
-        </div>
+        </section>
+      </div>
       </section>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="footer-wrapper">
