@@ -41,8 +41,38 @@
             </li>
             <li class="list navigation-item-user">
               <a class="navigation-link" href="#">
-                <span class="basket-list user-basket-icon">Корзина</span>
-              </a>
+                <a class="navigation-link user-basket-icon" href="#">
+                  <span class="basket-amount">2</span>Корзина</a>
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <h2 class="popover-title visually-hidden">Корзина</h2>
+                    <ul class="cart-items-list">
+                      <li class="list cart-item">
+                        <img class="cart-item-image" src="images/product-in-basket1.png" width="39" height="43"
+                          alt="Товар в корзине">
+                        <a class="cart-item-title" href="">Любительская<br>селфи-палка</a>
+                        <button class="delete-button"><span class="visually-hidden">Удалить из корзины</span></button>
+                      </li>
+                      <li class="list cart-item">
+                        <img class="cart-item-image" src="images/product-in-basket2.png" width="39" height="43"
+                          alt="Товар в корзине">
+                        <a class="cart-item-title" href="">Профессиональная селфи-палка</a>
+                        <button class="delete-button"><span class="visually-hidden">Удалить из корзины</span></button>
+                      </li>
+                    </ul>
+                  </div>
+                  <ul class="order-information-list">
+                    <li class="list order-information-item">Товаров:
+                      <span class="total-amount">2</span>
+                    </li>
+                    <li class="list order-information-item">Сумма:
+                      <span class="total-amount">2000 ₽</span>
+                    </li>
+                  </ul>
+                  <div class="button-basket">
+                    <a class="button open-basket-link" href="#">Открыть корзину</a>
+                  </div>
+                </div>
             </li>
           </ul>
         </div>
@@ -188,7 +218,7 @@
                 <li class="list catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
-                    <span class="control-mark"></span>
+                    <span class="control-mark control-mark-radio-checked"></span>
                     <span class="control-label-radio">Есть</span>
                   </label>
                 </li>
@@ -212,12 +242,18 @@
             </select>
             <ul class="sorting-direction-list">
               <li class="list sorting-direction-item">
-                <a class="sorting-direction-link" href="#"><span class="visually-hidden">Сортировать по
-                    убыванию</span></a>
+                <a class="sorting-direction-link" href="#">
+                  <span class="visually-hidden">Сортировать по убыванию</span>
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0L11.5 10H0.5" fill="black"/></svg>
+                    </a>
               </li>
               <li class="list sorting-direction-item">
-                <a class="sorting-direction-link sorting-direction-link-transform" href="#"><span
-                    class="visually-hidden">Сортировать по возврастанию</span></a>
+                <a class="sorting-direction-link sorting-direction-link-transform" href="#">
+                  <span class="visually-hidden">Сортировать по возврастанию</span>
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 0L11.5 10H0.5" fill="black"/></svg>
+                    </a>
               </li>
             </ul>
           </section>
@@ -278,11 +314,11 @@
                   </div>
                 </li>
               </ul>
-              <div class="show-more">
+              <div class="button-show-more">
                 <a class="button pagination-show-more" href="#">Загрузить ещё</a>
               </div>
               <div class="pagination">
-                <a class="pagination-link pagination-prev" href="#">Назад</a>
+                <a class="pagination-prev" href="#">Назад</a>
                 <ul class="pagination-list">
                   <li class="list pagination-item">
                     <a class="pagination-link" href="#">1</a>
@@ -300,7 +336,7 @@
                     <a class="pagination-link" href="#">15</a>
                   </li>
                 </ul>
-                <a class="pagination-link pagination-next" href="#">Вперед</a>
+                <a class="pagination-next" href="#">Вперед</a>
               </div>
             </section>
           </div>
