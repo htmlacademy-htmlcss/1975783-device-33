@@ -2236,8 +2236,8 @@ body {
 .mail-form-field {
     border: none;
     padding: 20px 35px 20px 20px;
-    min-height: 60px;
     background-color: #F0F0F0;
+    box-sizing: border-box;
 }
 
 .modal-information-icon {
@@ -2345,14 +2345,12 @@ body {
 }
 
 .name-form-field {
-    box-sizing: border-box;
     background-image: url(../images/modal-user.svg);
     background-repeat: no-repeat;
     background-position: 320px center;
 }
 
 .mail-form-field {
-    box-sizing: border-box;
     background-image: url(../images/modal-mail.svg);
     background-repeat: no-repeat;
     background-position: 316px center;
@@ -2392,7 +2390,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     position: absolute;
-    bottom: 56%;
+    bottom: 53%;
 }
 
 #email::placeholder {
@@ -2448,8 +2446,8 @@ body {
     padding: 0;
     margin: 0;
     position: absolute; 
-    right: 60px;
-    top: -100px; 
+    right: 65px;
+    top: -97px; 
     cursor: pointer;
 }
 
