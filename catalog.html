@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Девайс
-  </title>
+  <title>HTML Academy: Девайс</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -38,7 +38,7 @@
               <a class="navigation-link user-login-icon" href="#">Коля Петухов</a>
             </li>
             <li class="list user-menu-item">
-              <a class="navigation-link" href="#">Выйти</a>
+              <a class="navigation-link navigation-link-out" href="#">Выйти</a>
             </li>
           </ul>
           <ul class="user-menu-registration-list">
@@ -84,7 +84,7 @@
         </div>
       </div>
       <!-- Navigation -->
-      <nav class="navigation navigation-catalog">
+      <nav class="navigation navigation-catalog navigation-catalog-page">
         <ul class="navigation-menu">
           <li class="list navigation-menu-item">
             <a class="navigation-link navigation-link-catalog navigation-link-catalog-main" href="catalog.html">Каталог
@@ -166,7 +166,7 @@
               <legend class="catalog-filter-name">Стоимость</legend>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0px; width: 119px">
+                  <div class="range-bar" style="left: 0px; width: 126px">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -190,7 +190,7 @@
                   <label class="control control-checkbox">
                     <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                     <span class="control-mark control-mark-checked"></span>
-                    <span class="control-label">Чёрный</span>
+                    <span class="control-label">Черный</span>
                   </label>
                 </li>
                 <li class="list catalog-filter-item">
@@ -226,7 +226,7 @@
             <fieldset class="catalog-filter-group catalog-filter-group-bluetooth">
               <legend class="catalog-filter-name">Bluetooth
               </legend>
-              <ul class="catalog-filter-list">
+              <ul class="catalog-filter-list-radio">
                 <li class="list catalog-filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="radio" name="product-group" value="yes" checked>
@@ -254,20 +254,20 @@
             </select>
             <ul class="sorting-direction-list">
               <li class="list sorting-direction-item">
-                <a class="sorting-direction-link" href="#">
+                <button class="sorting-direction-link" type="button">
                   <span class="visually-hidden">Сортировать по убыванию</span>
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 0L11.5 10H0.5" fill="black" />
-                  </svg>
-                </a>
+                    <path d="M6 0L11.5 10H0.5" fill="black"/>
+                    </svg>                
+                </button>
               </li>
               <li class="list sorting-direction-item">
-                <a class="sorting-direction-link sorting-direction-link-transform" href="#">
+                <button class="sorting-direction-link sorting-direction-link-transform" type="button">
                   <span class="visually-hidden">Сортировать по возврастанию</span>
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 0L11.5 10H0.5" fill="black" />
-                  </svg>
-                </a>
+                    <path d="M6 0L11.5 10H0.5" fill="black"/>
+                    </svg>                  
+                </button>
               </li>
             </ul>
           </section>
@@ -282,7 +282,7 @@
                       alt="Любительская селфи-палка">
                   </a>
                   <div class="product-card-description">
-                    <h3 class="product-card-title">Любительская селфи-палка</h3>
+                    <h3 class="product-card-title">Любительская <br> селфи-палка</h3>
                     <p class="product-card-price">500 ₽</p>
                   </div>
                   <div class="popap-product-card">
@@ -329,9 +329,9 @@
                   </div>
                 </li>
               </ul>
-              <div class="button-show-more">
-                <a class="button pagination-show-more" href="#">Загрузить ещё</a>
-              </div>
+              <!-- <div class="button-show-more"> -->
+                <button class="button button-show-more" type="button">Загрузить ещё</button>
+              <!-- </div> -->
               <!-- Pagination -->
               <div class="pagination">
                 <a class="pagination-prev" href="#">Назад</a>
@@ -387,7 +387,7 @@
             <a class="footer-contacts-link" href="#">Контакты</a>
           </li>
         </ul>
-        <a class="footer-phone" href="tel:88128121212">8 (812) 812-12-12</a>
+        <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
       </div>
       <div class="footer-container-second">
         <ul class="footer-social-list">
