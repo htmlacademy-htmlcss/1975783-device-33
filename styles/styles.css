@@ -1380,7 +1380,7 @@ body {
 
 /* .newsletter-field:invalid {
     border-bottom: 2px solid #FF3D3D;
-} */
+}  */
 
 .send-letter {
     display: flex;
@@ -1806,6 +1806,12 @@ body {
 .range-input[type=number]:hover,
 .range-input[type=number]:focus {
     -moz-appearance: number-input;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 /* Control */
