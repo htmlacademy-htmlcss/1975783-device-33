@@ -2522,13 +2522,17 @@ body {
 
 .modal-amount[type=number] {
     -moz-appearance: textfield;
-         appearance: textfield;
 }
 
 .modal-amount[type=number]:hover,
 .modal-amount[type=number]:focus {
     -moz-appearance: number-input;
-         appearance: number-input;
+}
+
+.modal-amount::-webkit-outer-spin-button,
+.modal-amount::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .modal-amount {
