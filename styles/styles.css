@@ -1378,9 +1378,9 @@ body {
     background: #DCDCDC;
 }
 
-/* .newsletter-field:invalid {
+.newsletter-field:invalid {
     border-bottom: 2px solid #FF3D3D;
-}  */
+} 
 
 .send-letter {
     display: flex;
@@ -1533,6 +1533,15 @@ body {
 .footer-copyright-link {
     justify-self: end;
 }
+
+
+.footer-copyright-icon {
+    fill: #FFC700;
+} 
+
+.footer-copyright-link:hover .footer-copyright-icon {
+    fill: #FFFFFF;
+} 
 
 .footer-social-icon {
     border-radius: 50%;
@@ -2585,14 +2594,14 @@ body {
     bottom: 53%;
     display: none;
 }
-/* 
+
 .mail-form-field:invalid {
     outline: 2px solid #FF3D3D;
 } 
 
 .mail-form-field:invalid + .mistake-notification {
     display: block;
-}   */
+}  
 
 .field:active.field::placeholder {
     color: #000000;
